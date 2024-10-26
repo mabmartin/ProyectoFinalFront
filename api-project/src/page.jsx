@@ -1,6 +1,6 @@
 import './page.css';
 import Header from './components/Header';
-import Header from './components/footer';
+import footer from './components/footer';
 function Page({children}) {
   return (
     <>
