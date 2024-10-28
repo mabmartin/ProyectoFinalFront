@@ -21,4 +21,7 @@ header nav ul {
    
     
 }
-
+h3 { display: flex;
+    text-align: center;
+    margin: 0 40px 0 40px;
+}

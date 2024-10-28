@@ -1,18 +1,21 @@
 import Page from "../page";
 
-// src/pages/Contacto.jsx
-import React from 'react';
-import FormularioContacto from '../components/FormularioContacto';
+import React from "react";
+import FormularioContacto from "../components/FormularioContacto";
 
 const Contacto = () => {
-    return (
-        <Page>
-        <div>
-            <h1 style={{ textAlign: "center" }}>Contacto</h1>
-            <FormularioContacto />
-        </div>
-        </Page>
-    );
+  const handleSubmit = (data) => {
+    console.log("Datos enviados:", data);
+  };
+
+  return (
+    <Page>
+      <div>
+        <h1 style={{ textAlign: "center", marginBottom: "20px" }}>Contacto</h1>
+        <FormularioContacto onSubmit={handleSubmit} />
+      </div>
+    </Page>
+  );
 };
 
 export default Contacto;
