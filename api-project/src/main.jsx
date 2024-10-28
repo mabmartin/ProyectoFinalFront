@@ -1,5 +1,5 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import {createBrowserRouter, RouterProvider } from "react-router-dom";
 import Productos from './pages/Productos.jsx';
 import Contacto from './pages/Contacto.jsx';
@@ -16,10 +16,10 @@ const routes = createBrowserRouter([
 {
   path: "/contacto",
   element: <Contacto />
-}
+},
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={routes} />
   </StrictMode>,
-)
+);

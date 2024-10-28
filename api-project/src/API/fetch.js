@@ -1,13 +1,18 @@
 async function fetch(count) {
     try {
-       const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=${count}');
+      if (count) {
+       const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=zsq6U5jpoGg2Yq4m933vbRpDQzhnsMYfC5dy7WkL=${count}'
+
+       );
        if (!response.ok) {
         throw new Error('ERROR');
     } 
     const data = await response.json();
+    console.log(data);
     return data;
     }
-    catch (error) {
+    return [];
+   } catch (error) {
        console.error(error); 
     }
 }  
