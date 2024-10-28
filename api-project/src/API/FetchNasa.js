@@ -1,9 +1,10 @@
-async function fetch(count) {
+async function fetchNasa(count) {
     try {
       if (count) {
-       const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=zsq6U5jpoGg2Yq4m933vbRpDQzhnsMYfC5dy7WkL=${count}'
+       const response = await fetch ( `https://api.nasa.gov/planetary/apod?api_key=icG6JnrcSkQVt5Mn481Nv0yGWaFTZNw5IsI0ZuCA&count=${count}`);
+        
 
-       );
+       
        if (!response.ok) {
         throw new Error('ERROR');
     } 
@@ -17,4 +18,4 @@ async function fetch(count) {
     }
 }  
    
-   export default fetch;
+   export default fetchNasa;

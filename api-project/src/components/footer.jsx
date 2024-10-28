@@ -1,5 +1,6 @@
 import  "../../public/css/footer.css";
 function Footer() {
- return <footer>Footer</footer>;
+ return <Footer> Footer</Footer>
+
 }
 export default Footer;
